@@ -1,0 +1,17 @@
+{
+  "name": "campusrent",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "contracts"
+  ],
+  "scripts": {
+    "build:shared": "npm run build -w @campusrent/shared",
+    "test:contracts": "npm run test -w @campusrent/contracts",
+    "compile": "npm run compile -w @campusrent/contracts",
+    "dev": "npm run dev -w @campusrent/web",
+    "worker": "npm run start -w @campusrent/worker"
+  }
+}
